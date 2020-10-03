@@ -1,0 +1,832 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "32feet.NET/3.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/InTheHand.Net.Personal.dll": {}
+        },
+        "runtime": {
+          "lib/net/InTheHand.Net.Personal.dll": {}
+        }
+      },
+      "AudioSwitcher.AudioApi/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AudioSwitcher.AudioApi.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AudioSwitcher.AudioApi.dll": {}
+        }
+      },
+      "AudioSwitcher.AudioApi.CoreAudio/3.0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AudioSwitcher.AudioApi": "3.0.0"
+        },
+        "compile": {
+          "lib/net40/AudioSwitcher.AudioApi.CoreAudio.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AudioSwitcher.AudioApi.CoreAudio.dll": {}
+        }
+      },
+      "CSCore/1.2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net35-client/CSCore.dll": {}
+        },
+        "runtime": {
+          "lib/net35-client/CSCore.dll": {}
+        }
+      },
+      "Fleck/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Fleck.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Fleck.dll": {}
+        }
+      },
+      "LibUsbDotNet/2.2.29": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/LibUsbDotNet.LibUsbDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/LibUsbDotNet.LibUsbDotNet.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Collections.Concurrent/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "CommonLib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/CommonLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLib.dll": {}
+        }
+      },
+      "DS4Library/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CommonLib": "1.0.0",
+          "HidLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DS4Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DS4Library.dll": {}
+        }
+      },
+      "HidLibrary/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CommonLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HidLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HidLibrary.dll": {}
+        }
+      },
+      "ScarlettLib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ScarlettLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScarlettLib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "32feet.NET/3.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/InTheHand.Net.Personal.dll": {}
+        },
+        "runtime": {
+          "lib/net/InTheHand.Net.Personal.dll": {}
+        }
+      },
+      "AudioSwitcher.AudioApi/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AudioSwitcher.AudioApi.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AudioSwitcher.AudioApi.dll": {}
+        }
+      },
+      "AudioSwitcher.AudioApi.CoreAudio/3.0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AudioSwitcher.AudioApi": "3.0.0"
+        },
+        "compile": {
+          "lib/net40/AudioSwitcher.AudioApi.CoreAudio.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AudioSwitcher.AudioApi.CoreAudio.dll": {}
+        }
+      },
+      "CSCore/1.2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net35-client/CSCore.dll": {}
+        },
+        "runtime": {
+          "lib/net35-client/CSCore.dll": {}
+        }
+      },
+      "Fleck/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Fleck.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Fleck.dll": {}
+        }
+      },
+      "LibUsbDotNet/2.2.29": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/LibUsbDotNet.LibUsbDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/LibUsbDotNet.LibUsbDotNet.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Collections.Concurrent/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "CommonLib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/CommonLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLib.dll": {}
+        }
+      },
+      "DS4Library/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CommonLib": "1.0.0",
+          "HidLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DS4Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DS4Library.dll": {}
+        }
+      },
+      "HidLibrary/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CommonLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HidLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HidLibrary.dll": {}
+        }
+      },
+      "ScarlettLib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ScarlettLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScarlettLib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "32feet.NET/3.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/InTheHand.Net.Personal.dll": {}
+        },
+        "runtime": {
+          "lib/net/InTheHand.Net.Personal.dll": {}
+        }
+      },
+      "AudioSwitcher.AudioApi/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AudioSwitcher.AudioApi.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AudioSwitcher.AudioApi.dll": {}
+        }
+      },
+      "AudioSwitcher.AudioApi.CoreAudio/3.0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AudioSwitcher.AudioApi": "3.0.0"
+        },
+        "compile": {
+          "lib/net40/AudioSwitcher.AudioApi.CoreAudio.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AudioSwitcher.AudioApi.CoreAudio.dll": {}
+        }
+      },
+      "CSCore/1.2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net35-client/CSCore.dll": {}
+        },
+        "runtime": {
+          "lib/net35-client/CSCore.dll": {}
+        }
+      },
+      "Fleck/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Fleck.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Fleck.dll": {}
+        }
+      },
+      "LibUsbDotNet/2.2.29": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/LibUsbDotNet.LibUsbDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/LibUsbDotNet.LibUsbDotNet.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Collections.Concurrent/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "CommonLib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/CommonLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLib.dll": {}
+        }
+      },
+      "DS4Library/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CommonLib": "1.0.0",
+          "HidLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DS4Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DS4Library.dll": {}
+        }
+      },
+      "HidLibrary/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CommonLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HidLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HidLibrary.dll": {}
+        }
+      },
+      "ScarlettLib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ScarlettLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScarlettLib.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "32feet.NET/3.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/InTheHand.Net.Personal.dll": {}
+        },
+        "runtime": {
+          "lib/net/InTheHand.Net.Personal.dll": {}
+        }
+      },
+      "AudioSwitcher.AudioApi/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AudioSwitcher.AudioApi.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AudioSwitcher.AudioApi.dll": {}
+        }
+      },
+      "AudioSwitcher.AudioApi.CoreAudio/3.0.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AudioSwitcher.AudioApi": "3.0.0"
+        },
+        "compile": {
+          "lib/net40/AudioSwitcher.AudioApi.CoreAudio.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AudioSwitcher.AudioApi.CoreAudio.dll": {}
+        }
+      },
+      "CSCore/1.2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net35-client/CSCore.dll": {}
+        },
+        "runtime": {
+          "lib/net35-client/CSCore.dll": {}
+        }
+      },
+      "Fleck/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Fleck.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Fleck.dll": {}
+        }
+      },
+      "LibUsbDotNet/2.2.29": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/LibUsbDotNet.LibUsbDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/net45/LibUsbDotNet.LibUsbDotNet.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Collections.Concurrent/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "CommonLib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/CommonLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLib.dll": {}
+        }
+      },
+      "DS4Library/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CommonLib": "1.0.0",
+          "HidLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DS4Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DS4Library.dll": {}
+        }
+      },
+      "HidLibrary/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CommonLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HidLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HidLibrary.dll": {}
+        }
+      },
+      "ScarlettLib/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ScarlettLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScarlettLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "32feet.NET/3.5.0": {
+      "sha512": "Edc4otytrDm/zSpssF61LsZzkxZeaCEAo4cOUO1foS6OhUUCsEPRRTmwEG+jYC2zU1sYFrpZnjJU6F3a6NjSgA==",
+      "type": "package",
+      "path": "32feet.net/3.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "32feet.net.3.5.0.nupkg.sha512",
+        "32feet.net.nuspec",
+        "lib/net-cf/InTheHand.Net.Personal.XML",
+        "lib/net-cf/InTheHand.Net.Personal.dll",
+        "lib/net/InTheHand.Net.Personal.XML",
+        "lib/net/InTheHand.Net.Personal.dll"
+      ]
+    },
+    "AudioSwitcher.AudioApi/3.0.0": {
+      "sha512": "AiYO8fCawsu/v6rZgDWta55GYzh9vs/FocW9xKhEGF3xsUJIgPaVsWeeBwoexMttueW6E8RS0Vp0o8w8dodjyQ==",
+      "type": "package",
+      "path": "audioswitcher.audioapi/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "audioswitcher.audioapi.3.0.0.nupkg.sha512",
+        "audioswitcher.audioapi.nuspec",
+        "lib/net40/AudioSwitcher.AudioApi.dll"
+      ]
+    },
+    "AudioSwitcher.AudioApi.CoreAudio/3.0.0.1": {
+      "sha512": "mFO412u+l4wvdEOWZyO5Qz0WpjAjlm0QDOIMqPjoptPOPSR3BPtGo4oWsmzHvLaTFzHEqvK1dfyCvAP6T7Y0xg==",
+      "type": "package",
+      "path": "audioswitcher.audioapi.coreaudio/3.0.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "audioswitcher.audioapi.coreaudio.3.0.0.1.nupkg.sha512",
+        "audioswitcher.audioapi.coreaudio.nuspec",
+        "lib/net40/AudioSwitcher.AudioApi.CoreAudio.dll"
+      ]
+    },
+    "CSCore/1.2.1.2": {
+      "sha512": "DoQKUcdZLQawo3mOg8CvujJD9YkvTt6NtEu7S+OCo8+ySl8eCeUw4LFyL2E1OcAkPU918HZM6sUNcvIMcXWg6g==",
+      "type": "package",
+      "path": "cscore/1.2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cscore.1.2.1.2.nupkg.sha512",
+        "cscore.nuspec",
+        "lib/net35-client/CSCore.XML",
+        "lib/net35-client/CSCore.dll"
+      ]
+    },
+    "Fleck/1.1.0": {
+      "sha512": "X33W1PqRciRmh8Q23klEv3CiRS681IUJj/Ldlgi96lSfq1Uaux3l1qNewRDboiUxnHfoNtcIhFMIhc9AJ4cw6g==",
+      "type": "package",
+      "path": "fleck/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fleck.1.1.0.nupkg.sha512",
+        "fleck.nuspec",
+        "lib/net40/Fleck.dll",
+        "lib/net45/Fleck.dll",
+        "lib/netcoreapp2.0/Fleck.dll",
+        "lib/netstandard2.0/Fleck.dll"
+      ]
+    },
+    "LibUsbDotNet/2.2.29": {
+      "sha512": "kYXcaTDhoJlZP7yuh3yuBTYQxzw1p+QXpJnGRkdtGMq7Vy7NTD/DzBLnZR72gL7HEQUz+mpyRpq+ZOySwQb4Zw==",
+      "type": "package",
+      "path": "libusbdotnet/2.2.29",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/LibUsbDotNet.LibUsbDotNet.dll",
+        "lib/net45/LibUsbDotNet.LibUsbDotNet.pdb",
+        "lib/netcoreapp2.0/LibUsbDotNet.LibUsbDotNet.dll",
+        "lib/netcoreapp2.0/LibUsbDotNet.LibUsbDotNet.pdb",
+        "lib/netstandard1.6/LibUsbDotNet.LibUsbDotNet.dll",
+        "lib/netstandard1.6/LibUsbDotNet.LibUsbDotNet.pdb",
+        "lib/netstandard2.0/LibUsbDotNet.LibUsbDotNet.dll",
+        "lib/netstandard2.0/LibUsbDotNet.LibUsbDotNet.pdb",
+        "libusbdotnet.2.2.29.nupkg.sha512",
+        "libusbdotnet.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
+      ]
+    },
+    "System.Collections.Concurrent/4.3.0": {
+      "sha512": "ztl69Xp0Y/UXCL+3v3tEU+lIy+bvjKNUmopn1wep/a291pVPK7dxBd6T7WnlQqRog+d1a/hSsgRsmFnIBKTPLQ==",
+      "type": "package",
+      "path": "system.collections.concurrent/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Collections.Concurrent.dll",
+        "lib/netstandard1.3/System.Collections.Concurrent.dll",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Collections.Concurrent.dll",
+        "ref/netcore50/System.Collections.Concurrent.xml",
+        "ref/netcore50/de/System.Collections.Concurrent.xml",
+        "ref/netcore50/es/System.Collections.Concurrent.xml",
+        "ref/netcore50/fr/System.Collections.Concurrent.xml",
+        "ref/netcore50/it/System.Collections.Concurrent.xml",
+        "ref/netcore50/ja/System.Collections.Concurrent.xml",
+        "ref/netcore50/ko/System.Collections.Concurrent.xml",
+        "ref/netcore50/ru/System.Collections.Concurrent.xml",
+        "ref/netcore50/zh-hans/System.Collections.Concurrent.xml",
+        "ref/netcore50/zh-hant/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/System.Collections.Concurrent.dll",
+        "ref/netstandard1.1/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/de/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/es/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/fr/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/it/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/ja/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/ko/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/ru/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/zh-hans/System.Collections.Concurrent.xml",
+        "ref/netstandard1.1/zh-hant/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/System.Collections.Concurrent.dll",
+        "ref/netstandard1.3/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/de/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/es/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/fr/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/it/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/ja/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/ko/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/ru/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/zh-hans/System.Collections.Concurrent.xml",
+        "ref/netstandard1.3/zh-hant/System.Collections.Concurrent.xml",
+        "ref/portable-net45+win8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.collections.concurrent.4.3.0.nupkg.sha512",
+        "system.collections.concurrent.nuspec"
+      ]
+    },
+    "CommonLib/1.0.0": {
+      "type": "project",
+      "path": "../CommonLib/CommonLib.csproj",
+      "msbuildProject": "../CommonLib/CommonLib.csproj"
+    },
+    "DS4Library/1.0.0": {
+      "type": "project",
+      "path": "../DS4Library/DS4Library.csproj",
+      "msbuildProject": "../DS4Library/DS4Library.csproj"
+    },
+    "HidLibrary/1.0.0": {
+      "type": "project",
+      "path": "../HidLibrary/HidLibrary.csproj",
+      "msbuildProject": "../HidLibrary/HidLibrary.csproj"
+    },
+    "ScarlettLib/1.0.0": {
+      "type": "project",
+      "path": "../ScarlettLib/ScarlettLib.csproj",
+      "msbuildProject": "../ScarlettLib/ScarlettLib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "32feet.NET >= 3.5.0",
+      "AudioSwitcher.AudioApi.CoreAudio >= 3.0.0.1",
+      "CSCore >= 1.2.1.2",
+      "CommonLib >= 1.0.0",
+      "DS4Library >= 1.0.0",
+      "Fleck >= 1.1.0",
+      "HidLibrary >= 1.0.0",
+      "LibUsbDotNet >= 2.2.29",
+      "Newtonsoft.Json >= 12.0.2",
+      "ScarlettLib >= 1.0.0",
+      "System.Collections.Concurrent >= 4.3.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\sarav\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\Projects\\Aesir\\AesirCore\\AesirCore\\AesirCore.csproj",
+      "projectName": "AesirCore",
+      "projectPath": "E:\\Projects\\Aesir\\AesirCore\\AesirCore\\AesirCore.csproj",
+      "packagesPath": "C:\\Users\\sarav\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\Aesir\\AesirCore\\AesirCore\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\sarav\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "E:\\Projects\\Aesir\\AesirCore\\CommonLib\\CommonLib.csproj": {
+              "projectPath": "E:\\Projects\\Aesir\\AesirCore\\CommonLib\\CommonLib.csproj"
+            },
+            "E:\\Projects\\Aesir\\AesirCore\\DS4Library\\DS4Library.csproj": {
+              "projectPath": "E:\\Projects\\Aesir\\AesirCore\\DS4Library\\DS4Library.csproj"
+            },
+            "E:\\Projects\\Aesir\\AesirCore\\HidLibrary\\HidLibrary.csproj": {
+              "projectPath": "E:\\Projects\\Aesir\\AesirCore\\HidLibrary\\HidLibrary.csproj"
+            },
+            "E:\\Projects\\Aesir\\AesirCore\\ScarlettLib\\ScarlettLib.csproj": {
+              "projectPath": "E:\\Projects\\Aesir\\AesirCore\\ScarlettLib\\ScarlettLib.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "32feet.NET": {
+            "target": "Package",
+            "version": "[3.5.0, )"
+          },
+          "AudioSwitcher.AudioApi.CoreAudio": {
+            "target": "Package",
+            "version": "[3.0.0.1, )"
+          },
+          "CSCore": {
+            "target": "Package",
+            "version": "[1.2.1.2, )"
+          },
+          "Fleck": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
+          "LibUsbDotNet": {
+            "target": "Package",
+            "version": "[2.2.29, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.2, )"
+          },
+          "System.Collections.Concurrent": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
